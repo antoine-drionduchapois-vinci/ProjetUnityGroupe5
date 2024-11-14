@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 3;
     // Start is called before the first frame update
