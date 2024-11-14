@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,25 +13,25 @@ public class Player : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
-    
 
-    
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
+
+
+        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
-            if(this.gameObject.transform.position.x > LevelBoundery.leftSide)
-            {
+            // Allow movement to the boundary, not just before it
+            Debug.Log("Left key pressed");
+       
                 transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
-            }
-          
+           
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            if(this.gameObject.transform.position.x < LevelBoundery.rightSide) {
+            // Allow movement to the boundary, not just before it
+          
                 transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
-            }
            
-        
         }
+
     }
 }
