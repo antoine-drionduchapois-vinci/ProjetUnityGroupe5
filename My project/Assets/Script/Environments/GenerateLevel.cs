@@ -29,7 +29,7 @@ public class GenerateLevel : MonoBehaviour
         Instantiate(section[secNumb], new Vector3(0, 0, zPos), Quaternion.identity);
         zPos += 30;
         //A modifier en fonction de la vitesse du jeux
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         creatingSection= false;
     }
 }
