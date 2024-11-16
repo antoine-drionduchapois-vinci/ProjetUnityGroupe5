@@ -521,8 +521,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579808457}
+  - component: {fileID: 579808458}
   m_Layer: 0
-  m_Name: Section1
+  m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -547,6 +548,19 @@ Transform:
   - {fileID: 476776533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579808458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579808456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4538277403ddf4b83768af60534ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: 
 --- !u!1 &645508114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,8 +1409,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1285603478}
+  - component: {fileID: 1285603479}
   m_Layer: 0
-  m_Name: StartSection
+  m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1420,6 +1435,19 @@ Transform:
   - {fileID: 1735859039}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1285603479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285603477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4538277403ddf4b83768af60534ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: 
 --- !u!1 &1373062153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,8 +1884,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1866481261}
+  - component: {fileID: 1866481262}
   m_Layer: 0
-  m_Name: Section2
+  m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,6 +1910,19 @@ Transform:
   - {fileID: 245335052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1866481262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866481260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4538277403ddf4b83768af60534ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
