@@ -352,7 +352,9 @@ PrefabInstance:
       value: DoubleCollones
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 119440226688746535, guid: b80ba960e82f939488dec95e63c95527, type: 3}
+    - {fileID: 3050917055813908036, guid: b80ba960e82f939488dec95e63c95527, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80ba960e82f939488dec95e63c95527, type: 3}
@@ -1781,7 +1783,9 @@ PrefabInstance:
       value: DoubleCollones
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 119440226688746535, guid: b80ba960e82f939488dec95e63c95527, type: 3}
+    - {fileID: 3050917055813908036, guid: b80ba960e82f939488dec95e63c95527, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80ba960e82f939488dec95e63c95527, type: 3}
@@ -2995,7 +2999,9 @@ PrefabInstance:
       value: DoubleCollones
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 119440226688746535, guid: b80ba960e82f939488dec95e63c95527, type: 3}
+    - {fileID: 3050917055813908036, guid: b80ba960e82f939488dec95e63c95527, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80ba960e82f939488dec95e63c95527, type: 3}
@@ -3585,7 +3591,9 @@ PrefabInstance:
       value: DoubleCollones
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 119440226688746535, guid: b80ba960e82f939488dec95e63c95527, type: 3}
+    - {fileID: 3050917055813908036, guid: b80ba960e82f939488dec95e63c95527, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80ba960e82f939488dec95e63c95527, type: 3}
@@ -5594,7 +5602,9 @@ PrefabInstance:
       value: DoubleCollones
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 119440226688746535, guid: b80ba960e82f939488dec95e63c95527, type: 3}
+    - {fileID: 3050917055813908036, guid: b80ba960e82f939488dec95e63c95527, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80ba960e82f939488dec95e63c95527, type: 3}
