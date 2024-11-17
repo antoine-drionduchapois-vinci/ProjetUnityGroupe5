@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             // Allow movement to the boundary, not just before it
-            Debug.Log("Left key pressed");
+           
             if (this.gameObject.transform.position.x > LevelBoundery.leftSide)
             {
                 transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
