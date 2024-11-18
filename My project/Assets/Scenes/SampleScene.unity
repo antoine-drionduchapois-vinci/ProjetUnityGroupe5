@@ -179,6 +179,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: PreventConflit
       objectReference: {fileID: 0}
+    - target: {fileID: 2115715934527149317, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539016745545537160, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213258610466560107, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294698053919509265, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294698053919509265, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052461866472503505, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
