@@ -41,7 +41,14 @@ public class PlayerMove : MonoBehaviour
     void MoveForward()
     {
         // Mouvement constant vers l'avant
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+
+       // transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+
+
+
+        
+
     }
 
     void HandleInput()
@@ -59,8 +66,26 @@ public class PlayerMove : MonoBehaviour
         }
 
         // Déplacement latéral
-        float horizontalInput = Input.GetAxis("Horizontal") * leftRightSpeed * Time.deltaTime;
-        transform.Translate(Vector3.right * horizontalInput);
+        //   float horizontalInput = Input.GetAxis("Horizontal") * leftRightSpeed * Time.deltaTime;
+        // transform.Translate(Vector3.right * horizontalInput);
+        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            // Allow movement to the boundary, not just before it
+
+            if (this.gameObject.transform.position.x > LevelBoundery.leftSide)
+            {
+                transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
+            }
+        }
+
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            // Allow movement to the boundary, not just before it
+            if (this.gameObject.transform.position.x < LevelBoundery.rightSide)
+            {
+                transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
+            }
+        }
     }
 
     void Jump()
