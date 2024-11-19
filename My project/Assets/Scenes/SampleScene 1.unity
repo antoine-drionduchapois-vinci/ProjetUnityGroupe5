@@ -5474,6 +5474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 0}
   charModel: {fileID: 0}
+  LevelControl: {fileID: 0}
 --- !u!1001 &1497789900
 PrefabInstance:
   m_ObjectHideFlags: 0
