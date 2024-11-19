@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DayNightCycle : MonoBehaviour
 {
-   
+
     public Light directionalLight; // Assign your directional light in the Inspector
     public Light playerLight;      // Assign the player's light in the Inspector
     public float dayDuration = 60f; // Duration of a full day in seconds
@@ -15,10 +15,10 @@ public class DayNightCycle : MonoBehaviour
     {
         // Calculate the rotation speed for the sun
         rotationSpeed = 360f / dayDuration;
+
        
-        
-           skyboxMaterial = RenderSettings.skybox; // Automatically use the active skybox
-        
+        skyboxMaterial = RenderSettings.skybox; // Automatically use the active skybox
+        skyboxMaterial.SetFloat("_Exposure", 1);
     }
 
     void Update()
@@ -41,21 +41,19 @@ public class DayNightCycle : MonoBehaviour
         AdjustSkyboxExposure();
 
     }
+
     private void AdjustSkyboxExposure()
     {
-        // Get the sun's angle (y-axis determines horizontal rotation)
+        // Get the sun's angle
         float sunAngle = directionalLight.transform.eulerAngles.y;
 
-        // Calculate exposure: 
-        // - Sun rising: 0 to 180 degrees -> minExposure to maxExposure
-        // - Sun setting: 180 to 360 degrees -> maxExposure to minExposure
-        float exposure = sunAngle <= 180f
-            ? Mathf.Lerp(minExposure, maxExposure, Mathf.InverseLerp(0f, 180f, sunAngle)) // Daytime
-            : Mathf.Lerp(maxExposure, minExposure, Mathf.InverseLerp(180f, 360f, sunAngle)); // Nighttime
-
+        // Calculate the exposure based on the sun's angle
+        float exposure = Mathf.Lerp(minExposure, maxExposure, Mathf.InverseLerp(180f, 0f, sunAngle));
+       
         // Apply the calculated exposure to the skybox
         if (skyboxMaterial.HasProperty("_Exposure"))
         {
+
             skyboxMaterial.SetFloat("_Exposure", exposure);
         }
     }
@@ -83,6 +81,6 @@ public class DayNightCycle : MonoBehaviour
     }
 
 
-   
+
 
 }
