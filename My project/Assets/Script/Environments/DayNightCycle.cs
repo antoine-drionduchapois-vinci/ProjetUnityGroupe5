@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DayNightCycle : MonoBehaviour
 {
+    public Material skybox;
     public Light directionalLight; // Assign your directional light in the Inspector
     public Light playerLight;      // Assign the player's light in the Inspector
     public float dayDuration = 60f; // Duration of a full day in seconds
