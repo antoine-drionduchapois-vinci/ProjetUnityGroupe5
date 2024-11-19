@@ -2,17 +2,23 @@ using UnityEngine;
 
 public class DayNightCycle : MonoBehaviour
 {
-    public Material skybox;
+   
     public Light directionalLight; // Assign your directional light in the Inspector
     public Light playerLight;      // Assign the player's light in the Inspector
     public float dayDuration = 60f; // Duration of a full day in seconds
-
+    public Material skyboxMaterial;
     private float rotationSpeed;
+    private float maxExposure = 1f;       // Maximum exposure during the day
+    private float minExposure = 0f;
 
     void Start()
     {
         // Calculate the rotation speed for the sun
         rotationSpeed = 360f / dayDuration;
+       
+        
+           skyboxMaterial = RenderSettings.skybox; // Automatically use the active skybox
+        
     }
 
     void Update()
@@ -31,7 +37,27 @@ public class DayNightCycle : MonoBehaviour
         }
 
         // Adjust ambient light for smooth transitions between day and night
-        AdjustAmbientLight();
+        // AdjustAmbientLight();
+        AdjustSkyboxExposure();
+
+    }
+    private void AdjustSkyboxExposure()
+    {
+        // Get the sun's angle (y-axis determines horizontal rotation)
+        float sunAngle = directionalLight.transform.eulerAngles.y;
+
+        // Calculate exposure: 
+        // - Sun rising: 0 to 180 degrees -> minExposure to maxExposure
+        // - Sun setting: 180 to 360 degrees -> maxExposure to minExposure
+        float exposure = sunAngle <= 180f
+            ? Mathf.Lerp(minExposure, maxExposure, Mathf.InverseLerp(0f, 180f, sunAngle)) // Daytime
+            : Mathf.Lerp(maxExposure, minExposure, Mathf.InverseLerp(180f, 360f, sunAngle)); // Nighttime
+
+        // Apply the calculated exposure to the skybox
+        if (skyboxMaterial.HasProperty("_Exposure"))
+        {
+            skyboxMaterial.SetFloat("_Exposure", exposure);
+        }
     }
 
     // Determine if it's currently night
@@ -55,5 +81,8 @@ public class DayNightCycle : MonoBehaviour
             RenderSettings.ambientLight = Color.Lerp(Color.black, Color.white, Mathf.InverseLerp(0f, 180f, sunAngle));
         }
     }
+
+
+   
 
 }
