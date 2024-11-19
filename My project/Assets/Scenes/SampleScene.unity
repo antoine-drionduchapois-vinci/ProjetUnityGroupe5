@@ -457,7 +457,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224293013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89f4a2c30d50cd34188d8fd0092cb400, type: 3}
   m_Name: 
@@ -3685,10 +3685,18 @@ PrefabInstance:
       propertyPath: LevelControl
       value: 
       objectReference: {fileID: 224293013}
+    - target: {fileID: 915765602403062507, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 224293013}
     - target: {fileID: 1945397176578620474, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       propertyPath: m_Name
       value: PreventConflit
       objectReference: {fileID: 0}
+    - target: {fileID: 3538542151190237111, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 224293013}
     - target: {fileID: 4326766975112263962, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       propertyPath: LevelControl
       value: 
@@ -3709,6 +3717,10 @@ PrefabInstance:
       propertyPath: LevelControl
       value: 
       objectReference: {fileID: 224293013}
+    - target: {fileID: 6119850194853531304, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 224293013}
     - target: {fileID: 6136401196614581285, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       propertyPath: LevelControl
       value: 
@@ -3725,7 +3737,15 @@ PrefabInstance:
       propertyPath: LevelControl
       value: 
       objectReference: {fileID: 224293013}
+    - target: {fileID: 7956167982168088317, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 224293013}
     - target: {fileID: 8706017202725253915, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 224293013}
+    - target: {fileID: 8784200730969654292, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       propertyPath: LevelControl
       value: 
       objectReference: {fileID: 224293013}
@@ -3818,10 +3838,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7451945847126209663, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 224293020}
+      addedObject: {fileID: 224293019}
     - targetCorrespondingSourceObject: {fileID: 7451945847126209663, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 224293019}
+      addedObject: {fileID: 224293020}
     - targetCorrespondingSourceObject: {fileID: 8731774750328811812, guid: 082ec9ba86746c74682f8f7f45543d9a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 165455244}
