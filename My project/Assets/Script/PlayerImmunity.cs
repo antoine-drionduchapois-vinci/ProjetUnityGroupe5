@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class PlayerImmunity : MonoBehaviour
 {
-    public Material normalMaterial;    // Player's default material
-    public Material safeMaterial;     // Material to indicate immunity
+     
     public float immunityDuration = 5f; // Duration of the immunity effect
     private Renderer playerRenderer;
-    private bool isImmune = false;     // Tracks immunity state
+    private bool isImmune = false;
+    public ParticleSystem immunityEffect;
 
     void Start()
     {
@@ -30,11 +30,11 @@ public class PlayerImmunity : MonoBehaviour
         isImmune = true;
 
         // Change material to indicate immunity
-        if (safeMaterial != null)
+        if (immunityEffect != null)
         {
-            playerRenderer.material = safeMaterial;
+            immunityEffect.Play();
         }
-      
+
 
         int obstacleLayer = LayerMask.NameToLayer("Obstacle"); // Ensure the obstacle layer exists
         int playerLayer = gameObject.layer; // Get the player's layer
@@ -46,16 +46,17 @@ public class PlayerImmunity : MonoBehaviour
     
 
         Physics.IgnoreLayerCollision(playerLayer, obstacleLayer, false);
-       
+
 
 
 
         // Restore normal state
-        if (normalMaterial != null)
+        if (immunityEffect != null)
         {
-            playerRenderer.material = normalMaterial;
+            immunityEffect.Stop();
         }
-    
+
+
         isImmune = false;
       
     }
