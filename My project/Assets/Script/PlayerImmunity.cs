@@ -35,12 +35,12 @@ public class PlayerImmunity : MonoBehaviour
             immunityEffect.Play();
         }
 
-
+       
         int obstacleLayer = LayerMask.NameToLayer("Obstacle"); // Ensure the obstacle layer exists
         int playerLayer = gameObject.layer; // Get the player's layer
        
         Physics.IgnoreLayerCollision(playerLayer, obstacleLayer, true);
-
+        Debug.Log("test");
 
         yield return new WaitForSeconds(duration);
     
