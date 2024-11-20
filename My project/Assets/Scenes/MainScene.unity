@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4f95f33c4c6f3d444a4d62e09bc9175b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -22003,7 +22003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &6499598510698493706
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27801,6 +27801,7 @@ GameObject:
   - component: {fileID: 5260260308928364032}
   - component: {fileID: 4272082616409394130}
   - component: {fileID: 5667520396112964162}
+  - component: {fileID: 8456653736324253307}
   m_Layer: 0
   m_Name: LevelControl
   m_TagString: Untagged
@@ -27808,6 +27809,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8456653736324253307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456653736324253306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb60ef144bbeded48924b0f38fba775c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionalLight: {fileID: 1715451511105814546}
+  playerLight: {fileID: 0}
+  dayDuration: 60
+  skyboxMaterial: {fileID: 2100000, guid: 12ccb828343c3405fb94289774b51aad, type: 2}
 --- !u!1 &8493481783914394535
 GameObject:
   m_ObjectHideFlags: 0
