@@ -35,13 +35,13 @@ public class GenerateLevel : MonoBehaviour
     {
         // Generate a random section
         secNumb = Random.Range(0, section.Length);
-        Instantiate(section[secNumb], new Vector3(0, 0, zPos), Quaternion.identity);
+        Instantiate(section[secNumb], new Vector3(0, 0, zPos), section[secNumb].transform.rotation);
 
         // Increment the zPos for the next section
         zPos += 30;
 
         // Wait before generating the next section
-      
+
         yield return new WaitForSeconds(currentWaitTime);
 
         creatingSection = false;
