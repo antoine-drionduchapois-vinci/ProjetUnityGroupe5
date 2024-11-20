@@ -17,7 +17,7 @@ public class EndRunSequence : MonoBehaviour
 
     IEnumerator EndRun()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(3);
         LiveCoins.SetActive(false);
         LiveDistance.SetActive(false);
         EndScreen.SetActive(true);
