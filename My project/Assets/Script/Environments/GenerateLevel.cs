@@ -1,35 +1,49 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GenerateLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject[] section;
-    public int zPos = 30;
+    public GameObject[] section; // Array of section prefabs
+    public int zPos = 30; // Z position for the next section
     public bool creatingSection = false;
     public int secNumb;
 
-    
-    // Update is called once per frame
+    public float initialWaitTime = 2f; // Starting generation wait time
+    public float minWaitTime = 0.4f; // Minimum generation wait time
+    public float speedIncreaseRate = 0.4f; // Rate at which player speed increases per second
+    private float currentWaitTime;
+
+    void Start()
+    {
+        // Set the starting wait time
+        currentWaitTime = initialWaitTime;
+    }
+
     void Update()
     {
-        if(creatingSection == false){
+        if (!creatingSection)
+        {
             creatingSection = true;
             StartCoroutine(GenerateSection());
         }
-    }
 
+        // Gradually decrease the wait time based on speedIncreaseRate
+        currentWaitTime = Mathf.Max(minWaitTime, currentWaitTime - (speedIncreaseRate * Time.deltaTime));
+    }
 
     IEnumerator GenerateSection()
     {
-        // Pour l'instant il y a 3 sections donc 3 mais
-        // si rajoute des sections il faut changer le nombre
+        // Generate a random section
         secNumb = Random.Range(0, section.Length);
-        Instantiate(section[secNumb], new Vector3(0, 0, zPos), Quaternion.identity);
+        Instantiate(section[secNumb], new Vector3(0, 0, zPos), section[secNumb].transform.rotation);
+
+        // Increment the zPos for the next section
         zPos += 30;
-        //A modifier en fonction de la vitesse du jeux
-        yield return new WaitForSeconds(2);
-        creatingSection= false;
+
+        // Wait before generating the next section
+
+        yield return new WaitForSeconds(currentWaitTime);
+
+        creatingSection = false;
     }
 }
