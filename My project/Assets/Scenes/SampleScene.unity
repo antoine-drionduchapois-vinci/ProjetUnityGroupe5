@@ -1803,7 +1803,7 @@ GameObject:
   - component: {fileID: 4653728570305805452}
   - component: {fileID: 1602360815973260875}
   m_Layer: 0
-  m_Name: Section1
+  m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14953,6 +14953,7 @@ MonoBehaviour:
   jumpForce: 7
   extraGravity: 20
   slideDuration: 0.5
+  charModel: {fileID: 6873991171098682000}
 --- !u!33 &4366016251305202891
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17266,7 +17267,7 @@ Transform:
   m_GameObject: {fileID: 8365950086041155326}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.02, y: -0.502, z: -0}
+  m_LocalPosition: {x: -0, y: -0.502, z: 0}
   m_LocalScale: {x: 1, y: 0.54239, z: 1.0663}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18106,7 +18107,7 @@ Transform:
   m_GameObject: {fileID: 4847756246658619252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.709999, y: 2.97, z: -13.369995}
+  m_LocalPosition: {x: 2.709999, y: 2.97, z: -13.17}
   m_LocalScale: {x: 1, y: 4.917532, z: 2.169907}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19251,7 +19252,7 @@ GameObject:
   - component: {fileID: 4758105893611531672}
   - component: {fileID: 5407939309063649482}
   m_Layer: 0
-  m_Name: Section2
+  m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27213,7 +27214,7 @@ GameObject:
   - component: {fileID: 2231774048786673863}
   - component: {fileID: 3345411140596912300}
   m_Layer: 0
-  m_Name: Section3
+  m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
