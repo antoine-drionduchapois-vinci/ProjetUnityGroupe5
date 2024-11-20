@@ -25,7 +25,7 @@ public class GenerateLevel : MonoBehaviour
     {
         // Pour l'instant il y a 3 sections donc 3 mais
         // si rajoute des sections il faut changer le nombre
-        secNumb = Random.Range(0, 3);
+        secNumb = Random.Range(0, section.Length);
         Instantiate(section[secNumb], new Vector3(0, 0, zPos), Quaternion.identity);
         zPos += 30;
         //A modifier en fonction de la vitesse du jeux
