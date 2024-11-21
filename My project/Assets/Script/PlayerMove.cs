@@ -130,6 +130,7 @@ public class PlayerMove : MonoBehaviour
 
     IEnumerator IncreaseSpeedOverTime()
     {
+        Debug.Log($"Speed increased: {moveSpeed}");
         while (moveSpeed < maxSpeed)
         {
             yield return new WaitForSeconds(1f); // Adjust speed every second
