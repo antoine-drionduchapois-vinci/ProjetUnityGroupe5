@@ -14098,7 +14098,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -23626,13 +23626,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4495299729132551074}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9063079, z: -0.42261827, w: 0}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.018294623, y: 0.9054583, z: -0.42222205, w: -0.039233007}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.745, y: 187.692, z: 5.885}
 --- !u!114 &6633731670151232048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29438,7 +29438,6 @@ MonoBehaviour:
   playerLight: {fileID: 874937513}
   dayDuration: 30
   skyboxMaterial: {fileID: 2100000, guid: 12ccb828343c3405fb94289774b51aad, type: 2}
-  initialSunAngle: 45
 --- !u!1 &8493481783914394535
 GameObject:
   m_ObjectHideFlags: 0
