@@ -308,6 +308,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1435035544}
     - target: {fileID: 8539098482014263608, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
+      propertyPath: tailleDeLaZoneHorsDuTemple
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539098482014263608, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
       propertyPath: sectioninside.Array.data[0]
       value: 
       objectReference: {fileID: 1344699375}

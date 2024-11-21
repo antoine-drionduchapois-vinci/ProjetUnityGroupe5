@@ -9,6 +9,7 @@ public class GenerateLevel : MonoBehaviour
     public int zPos = 30; // Z position for the next section
     public bool creatingSection = false;
     public int secNumb;
+    public int tailleDeLaZoneHorsDuTemple =50;
     public LevelDistance distancePlayed;
     public float initialWaitTime = 4f; // Starting generation wait time
     public float minWaitTime = 1f; // Minimum generation wait time
@@ -46,7 +47,7 @@ public class GenerateLevel : MonoBehaviour
     IEnumerator waitForCanion()
     {
         distance = distancePlayed.distanceCount;
-        if (distance > 100)
+        if (distance- tailleDeLaZoneHorsDuTemple > 100)
         {
             intersection=false;
         }
@@ -59,7 +60,7 @@ public class GenerateLevel : MonoBehaviour
         if ((zPos - (int)player.transform.position.z<1000))
         {
             distance = distancePlayed.distanceCount;
-            if (distance > 90)
+            if (distance > tailleDeLaZoneHorsDuTemple+30)
             {
                 // Generate a random section
                 secNumb = Random.Range(0, sectioninside.Length);
@@ -72,7 +73,7 @@ public class GenerateLevel : MonoBehaviour
             }
 
 
-            else if (distance < 30)
+            else if (distance < tailleDeLaZoneHorsDuTemple)
             {
                 // Generate a random section
                 secNumb = Random.Range(0, sectionOutside.Length);
