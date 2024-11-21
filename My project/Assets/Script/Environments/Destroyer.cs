@@ -17,7 +17,7 @@ public class Destroyer : MonoBehaviour
         // Repeat deletion every `interval` seconds
         while (true)
         {
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(40);
 
             // Check for the correct name or use a more flexible condition as needed
             if (parentName.Contains("Section(Clone)"))
