@@ -8,7 +8,7 @@ public class MainMenuFunction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
@@ -17,8 +17,10 @@ public class MainMenuFunction : MonoBehaviour
         
     }
 
-    public void StartGame()
+    public void StartGame( )
     {
+        Debug.Log("Clicked");
+        
         SceneManager.LoadScene("MainScene");
     }
 }
