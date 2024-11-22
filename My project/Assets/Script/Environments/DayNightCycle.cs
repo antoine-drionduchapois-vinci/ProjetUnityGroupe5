@@ -61,6 +61,6 @@ public class DayNightCycle : MonoBehaviour
     private bool IsNight()
     {
         // Use the sun's forward direction to determine if it's night
-        return Vector3.Dot(directionalLight.transform.forward, Vector3.down) < 0f;
+        return Vector3.Dot(directionalLight.transform.forward, Vector3.down)-1 < 0f;
     }
 }
