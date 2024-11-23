@@ -60,7 +60,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AtmosphereThickness: 1
-    - _Exposure: 0.9881543
+    - _Exposure: 0.04397863
     - _ImageType: 0
     - _Layout: 0
     - _Mapping: 1
