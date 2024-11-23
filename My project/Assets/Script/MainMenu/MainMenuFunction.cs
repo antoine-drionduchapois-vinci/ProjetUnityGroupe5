@@ -23,4 +23,8 @@ public class MainMenuFunction : MonoBehaviour
         
         SceneManager.LoadScene("MainScene");
     }
+    public void ShowLeaderBoard()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
