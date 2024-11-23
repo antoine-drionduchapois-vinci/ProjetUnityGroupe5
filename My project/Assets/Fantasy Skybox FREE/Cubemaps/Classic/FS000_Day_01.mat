@@ -60,7 +60,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _AtmosphereThickness: 1
+<<<<<<< HEAD
     - _Exposure: 0.04397863
+=======
+    - _Exposure: 0.8176997
+>>>>>>> 8c1575079fcd3e074114a877b2567c12e2476c10
     - _ImageType: 0
     - _Layout: 0
     - _Mapping: 1

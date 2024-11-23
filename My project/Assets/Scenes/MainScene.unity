@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012314331726, guid: 6e659ebd79ad8c5408cd18c2a0e534eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4000012314331726, guid: 6e659ebd79ad8c5408cd18c2a0e534eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -225,6 +225,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6881216295513653999, guid: 8471a7af98df11f429ea1b54fcc0cf49, type: 3}
   m_PrefabInstance: {fileID: 9023984581323015157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &833624690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7017038059430687926, guid: 375fcbd775247cc41ba33b213c59f66d, type: 3}
+  m_PrefabInstance: {fileID: 5871607100450290391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!108 &874937513 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 7546150614351036602, guid: cfeb3584f9411064d942a09f475c882e, type: 3}
@@ -234,6 +239,11 @@ Light:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8543830128392433172, guid: 8471a7af98df11f429ea1b54fcc0cf49, type: 3}
   m_PrefabInstance: {fileID: 9023984581323015157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1347109137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 765797816614784217, guid: 375fcbd775247cc41ba33b213c59f66d, type: 3}
+  m_PrefabInstance: {fileID: 5871607100450290391}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1435035544 stripped
 GameObject:
@@ -341,11 +351,11 @@ PrefabInstance:
     - target: {fileID: 2510540524080936565, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
       propertyPath: DistanceEndDisplay
       value: 
-      objectReference: {fileID: 5815068387458834469}
+      objectReference: {fileID: 833624690}
     - target: {fileID: 2680244129528547201, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
       propertyPath: coinEndDisplay
       value: 
-      objectReference: {fileID: 6641490637272856086}
+      objectReference: {fileID: 1347109137}
     - target: {fileID: 2680244129528547201, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
       propertyPath: coinCountDisplay
       value: 
@@ -433,7 +443,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6140698338329998508, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8456653736324253308}
   m_SourcePrefab: {fileID: 100100000, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
 --- !u!82 &3525251299515396103 stripped
 AudioSource:
@@ -463,6 +476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2159837437451590179, guid: 375fcbd775247cc41ba33b213c59f66d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4619369097429719022, guid: 375fcbd775247cc41ba33b213c59f66d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -782,6 +799,10 @@ PrefabInstance:
       propertyPath: thePlayer
       value: 
       objectReference: {fileID: 7432372814857588387}
+    - target: {fileID: 3479405598964875960, guid: 0dd1402cdf685384d9e18ac890fdd244, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 8456653736324253306}
     - target: {fileID: 4880203047845499533, guid: 0dd1402cdf685384d9e18ac890fdd244, type: 3}
       propertyPath: coinFX
       value: 
@@ -798,6 +819,10 @@ PrefabInstance:
       propertyPath: thePlayer
       value: 
       objectReference: {fileID: 7432372814857588387}
+    - target: {fileID: 6747540359721812983, guid: 0dd1402cdf685384d9e18ac890fdd244, type: 3}
+      propertyPath: LevelControl
+      value: 
+      objectReference: {fileID: 8456653736324253306}
     - target: {fileID: 8499149955266841579, guid: 0dd1402cdf685384d9e18ac890fdd244, type: 3}
       propertyPath: m_Name
       value: StartSection
@@ -826,6 +851,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6140698338329998508, guid: 5f1e5e9846872d740bade80fd1a5b7b1, type: 3}
   m_PrefabInstance: {fileID: 2636582873271373429}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8456653736324253308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456653736324253306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f43056063709246863dd57197e3a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8745309348825724962
 PrefabInstance:
   m_ObjectHideFlags: 0
